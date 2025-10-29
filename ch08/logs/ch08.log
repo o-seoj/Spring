@@ -8788,3 +8788,447 @@ org.hibernate.id.IdentifierGenerationException: Identifier of entity 'kr.co.ch08
 2025-09-24T17:52:01.134+09:00  INFO 21236 --- [ch08] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-24T17:52:01.135+09:00  INFO 21236 --- [ch08] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
 2025-09-24T17:52:01.142+09:00  INFO 21236 --- [ch08] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2025-10-29T14:10:39.637+09:00  INFO 8200 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8200 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T14:10:39.640+09:00  INFO 8200 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T14:10:39.686+09:00  INFO 8200 --- [ch08] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\GGG\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GGG/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+2025-10-29T14:10:39.686+09:00  INFO 8200 --- [ch08] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-29T14:10:39.686+09:00  INFO 8200 --- [ch08] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-29T14:10:40.370+09:00  INFO 8200 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T14:10:40.426+09:00  INFO 8200 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2025-10-29T14:10:40.521+09:00  WARN 8200 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T14:10:41.030+09:00  INFO 8200 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T14:10:41.045+09:00  INFO 8200 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T14:10:41.045+09:00  INFO 8200 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T14:10:41.091+09:00  INFO 8200 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T14:10:41.092+09:00  INFO 8200 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1404 ms
+2025-10-29T14:10:41.283+09:00  INFO 8200 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T14:10:41.350+09:00  INFO 8200 --- [ch08] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-29T14:10:41.387+09:00  INFO 8200 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T14:10:41.700+09:00  INFO 8200 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T14:10:41.734+09:00  INFO 8200 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-29T14:10:41.741+09:00  WARN 8200 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T14:10:44.345+09:00  WARN 8200 --- [ch08] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1017, SQLState: 72000
+2025-10-29T14:10:44.345+09:00 ERROR 8200 --- [ch08] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : ORA-01017: 사용자명/비밀번호가 부적합, 로그온할 수 없습니다.
+
+https://docs.oracle.com/error-help/db/ora-01017/
+2025-10-29T14:10:44.346+09:00  WARN 8200 --- [ch08] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [ORA-01017: 사용자명/비밀번호가 부적합, 로그온할 수 없습니다.
+
+https://docs.oracle.com/error-help/db/ora-01017/] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at kr.co.ch08.Ch08Application.main(Ch08Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: java.sql.SQLException: ORA-01017: 사용자명/비밀번호가 부적합, 로그온할 수 없습니다.
+
+https://docs.oracle.com/error-help/db/ora-01017/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:610) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:605) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1701) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:936) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:969) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:547) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1746) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1493) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1433) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:2294) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:2231) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1155) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1189) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:106) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:887) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:694) ~[ojdbc11-23.7.0.25.01.jar:23.7.0.25.01]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	... 40 common frames omitted
+
+2025-10-29T14:10:44.353+09:00 ERROR 8200 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-10-29T14:10:44.354+09:00  WARN 8200 --- [ch08] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-10-29T14:10:44.357+09:00  INFO 8200 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-29T14:10:44.372+09:00  INFO 8200 --- [ch08] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-29T14:10:44.390+09:00 ERROR 8200 --- [ch08] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at kr.co.ch08.Ch08Application.main(Ch08Application.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:410) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.29.Final.jar:6.6.29.Final]
+	... 35 common frames omitted
+
+2025-10-29T14:57:36.302+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T14:57:36.308+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T14:57:36.367+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\GGG\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.7.0.25.01\665f52abef9122ce003b5cfc1d9d44f7302e2cfe\ojdbc11-23.7.0.25.01.jar referenced one or more files that do not exist: file:/C:/Users/GGG/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.7.0.25.01/665f52abef9122ce003b5cfc1d9d44f7302e2cfe/oraclepki.jar
+2025-10-29T14:57:36.367+09:00  INFO 8360 --- [ch08] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-29T14:57:36.368+09:00  INFO 8360 --- [ch08] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-29T14:57:37.299+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T14:57:37.352+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2025-10-29T14:57:37.447+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T14:57:37.889+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T14:57:37.902+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T14:57:37.902+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T14:57:37.945+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T14:57:37.946+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
+2025-10-29T14:57:38.135+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T14:57:38.204+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-29T14:57:38.242+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T14:57:38.549+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T14:57:38.580+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-29T14:57:38.590+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T14:57:38.959+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@15819140
+2025-10-29T14:57:38.960+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-29T14:57:39.231+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T14:57:40.082+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T14:57:41.119+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T14:57:41.355+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T14:57:41.724+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T14:57:41.754+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T14:57:41.763+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 6.109 seconds (process running for 6.907)
+2025-10-29T15:33:46.205+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29T15:33:46.206+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29T15:33:46.208+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-29T15:33:46.401+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'name': rejected value [jim]; codes [Pattern.user1DTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[가-힣]{2,10}$]; default message [이름은 한글 2~10자 입력]] ]
+2025-10-29T15:34:17.492+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'name': rejected value [ohseojeong]; codes [Pattern.user1DTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[가-힣]{2,10}$]; default message [이름은 한글 2~10자 입력]] ]
+2025-10-29T15:37:02.598+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a111, name=홍길동, birth=2025-10-02 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:08.724+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-5] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a111, name=홍길동, birth=2025-10-02 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:26.711+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-7] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-17 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:28.042+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-9] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-17 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:28.193+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-17 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:28.332+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-17 00:00:00.000, age=23, email=null)
+2025-10-29T15:37:38.544+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'name': rejected value [se]; codes [Pattern.user1DTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[가-힣]{2,10}$]; default message [이름은 한글 2~10자 입력]] ]
+2025-10-29T15:38:14.272+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'name': rejected value [se]; codes [Pattern.user1DTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[가-힣]{2,10}$]; default message [이름은 한글 2~10자 입력]] ]
+2025-10-29T15:38:52.890+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-7] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a12312, name=이순신, birth=2025-10-10 00:00:00.000, age=22, email=null)
+2025-10-29T15:46:59.927+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-9] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a12313213, name=이순신, birth=2025-10-10 00:00:00.000, age=22, email=null)
+2025-10-29T15:53:47.330+09:00  INFO 8360 --- [ch08] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
+2025-10-29T15:53:47.334+09:00  INFO 8360 --- [ch08] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T15:53:47.409+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T15:53:47.417+09:00  INFO 8360 --- [ch08] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T15:53:47.424+09:00  INFO 8360 --- [ch08] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-29T15:53:47.436+09:00  INFO 8360 --- [ch08] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-29T15:53:47.569+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T15:53:47.570+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T15:53:47.866+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T15:53:47.891+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2025-10-29T15:53:47.947+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T15:53:48.053+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T15:53:48.055+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T15:53:48.056+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T15:53:48.078+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T15:53:48.078+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
+2025-10-29T15:53:48.124+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T15:53:48.134+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T15:53:48.152+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T15:53:48.154+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-29T15:53:48.154+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T15:53:48.234+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@24dd061
+2025-10-29T15:53:48.235+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-29T15:53:48.239+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T15:53:48.320+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T15:53:49.084+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T15:53:49.153+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T15:53:49.245+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T15:53:49.254+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T15:53:49.258+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 1.732 seconds (process running for 3374.403)
+2025-10-29T15:53:49.260+09:00  INFO 8360 --- [ch08] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-29T15:53:49.369+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29T15:53:49.369+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29T15:53:49.370+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-29T15:53:50.680+09:00  INFO 8360 --- [ch08] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2025-10-29T15:53:50.681+09:00  INFO 8360 --- [ch08] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T15:53:50.784+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T15:53:50.787+09:00  INFO 8360 --- [ch08] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T15:53:50.788+09:00  INFO 8360 --- [ch08] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-29T15:53:50.795+09:00  INFO 8360 --- [ch08] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-29T15:53:50.858+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T15:53:50.858+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T15:53:51.027+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T15:53:51.043+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2025-10-29T15:53:51.081+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T15:53:51.141+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T15:53:51.141+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T15:53:51.141+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T15:53:51.155+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T15:53:51.155+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2025-10-29T15:53:51.178+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T15:53:51.182+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T15:53:51.189+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T15:53:51.190+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-29T15:53:51.190+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T15:53:51.231+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@44882557
+2025-10-29T15:53:51.231+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-29T15:53:51.234+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T15:53:51.299+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T15:53:51.388+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T15:53:51.477+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T15:53:51.592+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T15:53:51.611+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T15:53:51.616+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 0.781 seconds (process running for 3376.761)
+2025-10-29T15:53:51.619+09:00  INFO 8360 --- [ch08] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-29T15:54:00.006+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29T15:54:00.006+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29T15:54:00.008+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-29T15:54:00.023+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a12313213, name=jandfd, birth=2025-10-10 00:00:00.000, age=22, email=null)
+2025-10-29T15:54:23.521+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a1232, name=jimjim, birth=2025-10-10 00:00:00.000, age=22, email=null)
+2025-10-29T15:56:31.815+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-5] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a12321, name=haha, birth=2025-10-10 00:00:00.000, age=22, email=null)
+2025-10-29T15:56:50.435+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'userid': rejected value [a22]; codes [Pattern.user1DTO.userid,Pattern.userid,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.userid,userid]; arguments []; default message [userid],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[a-z0-9]{4,10}$]; default message [영어 소문자, 숫자 조합 최소 4~10자 입력]] ]
+2025-10-29T15:57:00.856+09:00  WARN 8360 --- [ch08] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<kr.co.ch08.dto.User1DTO> kr.co.ch08.controller.User1Controller.register(kr.co.ch08.dto.User1DTO): [Field error in object 'user1DTO' on field 'userid': rejected value [a22]; codes [Pattern.user1DTO.userid,Pattern.userid,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user1DTO.userid,userid]; arguments []; default message [userid],[Ljakarta.validation.constraints.Pattern$Flag;@24d4eae7,^[a-z0-9]{4,10}$]; default message [영어 소문자, 숫자 조합 최소 4~10자 입력]] ]
+2025-10-29T15:57:11.142+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-9] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a22321312, name=dasdf, birth=2025-10-01 00:00:00.000, age=21, email=null)
+2025-10-29T15:57:41.989+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=ag2132132, name=dfsfsfdfsd, birth=2025-10-02 00:00:00.000, age=42, email=null)
+2025-10-29T15:58:03.274+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a2132132, name=os, birth=2025-10-02 00:00:00.000, age=25, email=null)
+2025-10-29T16:10:42.968+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-5] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a10102, name=lola, birth=2025-10-02 00:00:00.000, age=25, email=null)
+2025-10-29T16:10:45.459+09:00  INFO 8360 --- [ch08] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2025-10-29T16:10:45.460+09:00  INFO 8360 --- [ch08] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T16:10:45.528+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T16:10:45.529+09:00  INFO 8360 --- [ch08] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T16:10:45.530+09:00  INFO 8360 --- [ch08] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-29T16:10:45.535+09:00  INFO 8360 --- [ch08] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-10-29T16:10:45.599+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T16:10:45.599+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T16:10:45.747+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T16:10:45.759+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-10-29T16:10:45.785+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T16:10:45.839+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T16:10:45.839+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T16:10:45.839+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T16:10:45.853+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T16:10:45.853+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2025-10-29T16:10:45.877+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T16:10:45.881+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T16:10:45.889+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T16:10:45.889+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-10-29T16:10:45.890+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T16:10:45.929+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection oracle.jdbc.driver.T4CConnection@56c372ea
+2025-10-29T16:10:45.929+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-10-29T16:10:45.932+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T16:10:45.994+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T16:10:46.078+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T16:10:46.140+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T16:10:46.205+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T16:10:46.213+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T16:10:46.217+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 0.64 seconds (process running for 4391.362)
+2025-10-29T16:10:46.217+09:00  INFO 8360 --- [ch08] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-29T16:11:22.226+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29T16:11:22.226+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29T16:11:22.227+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-29T16:11:22.232+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a101022, name=lola, birth=2025-10-02 00:00:00.000, age=25, email=null)
+2025-10-29T17:10:22.756+09:00  INFO 8360 --- [ch08] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-10-29T17:10:22.759+09:00  INFO 8360 --- [ch08] [Thread-17] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T17:10:22.833+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T17:10:22.836+09:00  INFO 8360 --- [ch08] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T17:10:22.837+09:00  INFO 8360 --- [ch08] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-10-29T17:10:22.842+09:00  INFO 8360 --- [ch08] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-10-29T17:10:22.928+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T17:10:22.928+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T17:10:23.091+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T17:10:23.104+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-10-29T17:10:23.136+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T17:10:23.265+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T17:10:23.266+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T17:10:23.267+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T17:10:23.288+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T17:10:23.288+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 358 ms
+2025-10-29T17:10:23.320+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T17:10:23.324+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T17:10:23.333+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T17:10:23.335+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-10-29T17:10:23.335+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T17:10:23.385+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection oracle.jdbc.driver.T4CConnection@5c0a2850
+2025-10-29T17:10:23.385+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-10-29T17:10:23.390+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T17:10:23.600+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T17:10:23.716+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T17:10:23.791+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T17:10:23.899+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T17:10:23.908+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T17:10:23.912+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 1.007 seconds (process running for 7969.058)
+2025-10-29T17:10:23.913+09:00  INFO 8360 --- [ch08] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-29T17:10:25.314+09:00  INFO 8360 --- [ch08] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-29T17:10:25.315+09:00  INFO 8360 --- [ch08] [Thread-21] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T17:10:25.380+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T17:10:25.381+09:00  INFO 8360 --- [ch08] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T17:10:25.381+09:00  INFO 8360 --- [ch08] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-10-29T17:10:25.388+09:00  INFO 8360 --- [ch08] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-10-29T17:10:25.454+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Starting Ch08Application using Java 17.0.0.1 with PID 8360 (C:\Users\GGG\Desktop\workspace\Spring\ch08\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\workspace\spring\ch08)
+2025-10-29T17:10:25.454+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : No active profile set, falling back to 1 default profile: "default"
+2025-10-29T17:10:25.605+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-29T17:10:25.616+09:00  INFO 8360 --- [ch08] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 5 JPA repository interfaces.
+2025-10-29T17:10:25.643+09:00  WARN 8360 --- [ch08] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch08]' package. Please check your configuration.
+2025-10-29T17:10:25.702+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-29T17:10:25.703+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-29T17:10:25.703+09:00  INFO 8360 --- [ch08] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-29T17:10:25.717+09:00  INFO 8360 --- [ch08] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring embedded WebApplicationContext
+2025-10-29T17:10:25.717+09:00  INFO 8360 --- [ch08] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 261 ms
+2025-10-29T17:10:25.739+09:00  INFO 8360 --- [ch08] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-29T17:10:25.742+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-29T17:10:25.749+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-29T17:10:25.750+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-10-29T17:10:25.750+09:00  WARN 8360 --- [ch08] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-10-29T17:10:25.788+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection oracle.jdbc.driver.T4CConnection@52664ba3
+2025-10-29T17:10:25.788+09:00  INFO 8360 --- [ch08] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-10-29T17:10:25.791+09:00  INFO 8360 --- [ch08] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-29T17:10:25.848+09:00  INFO 8360 --- [ch08] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-29T17:10:25.925+09:00  INFO 8360 --- [ch08] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T17:10:25.991+09:00  WARN 8360 --- [ch08] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-29T17:10:26.064+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-29T17:10:26.073+09:00  INFO 8360 --- [ch08] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch08'
+2025-10-29T17:10:26.076+09:00  INFO 8360 --- [ch08] [restartedMain] kr.co.ch08.Ch08Application               : Started Ch08Application in 0.644 seconds (process running for 7971.222)
+2025-10-29T17:10:26.077+09:00  INFO 8360 --- [ch08] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-29T17:45:52.553+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch08]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-29T17:45:52.553+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-29T17:45:52.554+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-29T17:45:54.034+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a101022
+2025-10-29T17:46:01.203+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-8] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a101022, name=lolalolo, birth=2025-10-02 00:00:00.000, age=25, email=null)
+2025-10-29T17:46:12.845+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-9] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a12312
+2025-10-29T17:46:25.438+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a101022
+2025-10-29T17:48:59.097+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-8] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a123
+2025-10-29T17:50:01.684+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-7] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-17 00:00:00.000, age=27, email=null)
+2025-10-29T17:50:04.581+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a123
+2025-10-29T17:53:10.631+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-3] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a123
+2025-10-29T17:53:21.235+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-8] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-02 00:00:00.000, age=27, email=null)
+2025-10-29T17:53:39.223+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-9] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a1232
+2025-10-29T17:55:24.077+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-1] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a1232, name=jimjim, birth=2025-10-01 00:00:00.000, age=22, email=null)
+2025-10-29T17:55:31.083+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-8] kr.co.ch08.controller.User1Controller    : user1 ==> userid=a123
+2025-10-29T17:55:34.624+09:00  INFO 8360 --- [ch08] [http-nio-8080-exec-7] kr.co.ch08.controller.User1Controller    : user1DTO=User1DTO(userid=a123, name=홍길동, birth=2025-10-04 00:00:00.000, age=27, email=null)
+2025-10-29T17:56:21.549+09:00  INFO 8360 --- [ch08] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-29T17:56:21.616+09:00  INFO 8360 --- [ch08] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-29T17:56:21.619+09:00  INFO 8360 --- [ch08] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-29T17:56:21.622+09:00  INFO 8360 --- [ch08] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-10-29T17:56:21.627+09:00  INFO 8360 --- [ch08] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.

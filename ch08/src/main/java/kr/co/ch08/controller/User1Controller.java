@@ -37,7 +37,7 @@ public class User1Controller {
         User1DTO user1DTO = user1Service.getUser(userid);
 
         return ResponseEntity
-                .status(HttpStatus.FOUND)
+                .status(HttpStatus.OK)
                 .body(user1DTO);
     }
 
@@ -60,7 +60,7 @@ public class User1Controller {
         User1DTO modifiedUser1 = user1Service.modify(user1DTO);
 
         return ResponseEntity
-                .status(HttpStatus.ACCEPTED)
+                .status(HttpStatus.OK)
                 .body(modifiedUser1);
     }
 
