@@ -33,6 +33,7 @@ public class UserController {
 
     @PostMapping("/user/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody UserDTO userDTO) {
+        log.info("Login User: {}", userDTO);
 
         // 시큐리티 인증처리
         UsernamePasswordAuthenticationToken authToken
